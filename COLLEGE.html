@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC College</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px;
+      text-align: center;
+    }
+
+    #home {
+      background: #e6f2ff;
+    }
+
+    #about {
+      background: #f9f9f9;
+    }
+
+    #courses {
+      background: #e6f2ff;
+    }
+
+    #contact {
+      background: #f9f9f9;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #0066cc;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>ABC College</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>Welcome to ABC College 🎓</h1>
+    <p>Your future starts here</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      ABC College is a top educational institution offering quality education
+      in Engineering, Science, and Arts.
+    </p>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>💻 Computer Science</li>
+      <li>⚙️ Mechanical Engineering</li>
+      <li>📊 Business Administration</li>
+      <li>🔬 Data Science</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@abccollege.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ABC College. All Rights Reserved.</p>
+  </footer>
+
+  <!-- INTERNAL JAVASCRIPT -->
+  <script>
+    function showMessage() {
+      document.getElementById("msg").innerText =
+        "Admissions are now OPEN 🎓 Apply today!";
+    }
+  </script>
+
+</body>
+</html>
